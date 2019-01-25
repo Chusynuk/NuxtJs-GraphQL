@@ -84,7 +84,8 @@ export default {
           this.password
         )
         this.loading = false
-        this.setUser(response.user)
+        //this.setUser(response.user)
+        this.$store.commit('auth/setUser', response.user)
         this.$router.push('/')
       } catch (err) {
         this.loading = false

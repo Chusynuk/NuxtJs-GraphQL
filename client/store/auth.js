@@ -14,7 +14,10 @@ export const mutations = {
 }
 
 export const getters = {
-  ussername: state => {
-    return state.user && state.user.ussername
+  username: state => {
+    return state.user && state.user.username
+  },
+  email: state => {
+    return state.user.email
   }
 }

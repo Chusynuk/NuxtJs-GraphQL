@@ -14,7 +14,7 @@
               href="#"
               class="nav-link"
             >
-              Hello {{ username }}
+              Hello {{ username }} und {{email}}
             </a>
           </li>
           <li v-if="username">
@@ -61,6 +61,9 @@ export default {
   computed: {
     username() {
       return this.$store.getters['auth/username']
+    },
+    email() {
+      return this.$store.getters['auth/email']
     }
   },
   methods: {
