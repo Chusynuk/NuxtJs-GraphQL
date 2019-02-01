@@ -23,7 +23,8 @@
     "js-cookie": "^2.2.0",
     "lodash": "^4.17.5",
     "strapi": "3.0.0-alpha.19",
-    "strapi-hook-mongoose": "3.0.0-alpha.19"
+    "strapi-hook-mongoose": "3.0.0-alpha.19",
+    "stripe": "^6.22.0"
   },
   "author": {
     "name": "jesuseloi",

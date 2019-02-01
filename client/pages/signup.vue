@@ -10,7 +10,7 @@
           <b-form-input
             id="username"
             v-model="username"
-            type="username"
+            type="String"
             autofocus="true"
             placeholder="Enter your username"
             required
@@ -21,7 +21,7 @@
           <b-form-input
             id="email"
             v-model="email"
-            type="email"
+            type="String"
             autofocus="true"
             placeholder="Enter your email"
             required
@@ -33,7 +33,7 @@
             id="password"
             v-model="password"
             label="password"
-            type="password"
+            type="String"
             class="form-control"
             autofocus="true"
             placeholder="Enter your password"

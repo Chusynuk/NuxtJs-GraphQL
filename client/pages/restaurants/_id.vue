@@ -55,6 +55,7 @@
               <button
                 :disabled="!selectedDishes.length"
                 class="btn btn-primary"
+                @click="goToCheckout"
               >Order</button>
             </div>
           </div>
@@ -91,7 +92,7 @@ export default {
     },
     numberOfItems() {
       return this.$store.getters['card/numberOfItems']
-    }
+    },
   },
   async fetch({ store, params }) {
     store.commit('dishes/emptyList')
@@ -128,7 +129,16 @@ export default {
       addToCard: 'card/add',
       removeFromCard: 'card/remove',
       emptyCard: 'card/emptyList'
-    })
+    }),
+    goToCheckout() {
+      const isConnected = this.$store.getters['auth/username']
+
+      if (!isConnected) {
+        this.$router.push('/signin')
+        return
+      }
+      return this.$router.push('/checkout')
+    },
   }
 }
 </script>

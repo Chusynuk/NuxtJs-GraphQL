@@ -17,7 +17,7 @@ export const getters = {
   username: state => {
     return state.user && state.user.username
   },
-  email: state => {
-    return state.user.email
-  }
+  // email: state => {
+  //   return state.user.email
+  // }
 }

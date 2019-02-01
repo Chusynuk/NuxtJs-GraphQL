@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _794d08ff = () => interopDefault(import('../pages/sigin.vue' /* webpackChunkName: "pages/sigin" */))
+const _a31688e6 = () => interopDefault(import('../pages/checkout.vue' /* webpackChunkName: "pages/checkout" */))
+const _989fa0ae = () => interopDefault(import('../pages/signin.vue' /* webpackChunkName: "pages/signin" */))
 const _6f72f3c2 = () => interopDefault(import('../pages/signup.vue' /* webpackChunkName: "pages/signup" */))
 const _7e720cec = () => interopDefault(import('../pages/restaurants/_id.vue' /* webpackChunkName: "pages/restaurants/_id" */))
 const _110d6a1b = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -65,9 +66,13 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/sigin",
-      component: _794d08ff,
-      name: "sigin"
+      path: "/checkout",
+      component: _a31688e6,
+      name: "checkout"
+    }, {
+      path: "/signin",
+      component: _989fa0ae,
+      name: "signin"
     }, {
       path: "/signup",
       component: _6f72f3c2,

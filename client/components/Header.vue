@@ -62,9 +62,9 @@ export default {
     username() {
       return this.$store.getters['auth/username']
     },
-    email() {
-      return this.$store.getters['auth/email']
-    }
+    // email() {
+    //   return this.$store.getters['auth/email']
+    // }
   },
   methods: {
     ...mapMutations({
