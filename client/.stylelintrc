@@ -1,0 +1,10 @@
+{
+  "processors": ["stylelint-processors-html"],
+  "extends": [
+    "stylelint-config-stantard",
+              "stylelint-config-recess-order"
+  ],
+  "rules": {
+    "no-empty-source" : null
+  }
+}
